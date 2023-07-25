@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"stepdefinitions","Hooks"},
 		tags = "@smoke",
 	        plugin= {"pretty",
-			"xml:target/MyReports/report.xml","json:target/MyReports/report.json"},
+			"xml:target/MyReports/report.xml","json:target/MyReports/report.json"}
 			)
 public class OrdersRunner {
 
