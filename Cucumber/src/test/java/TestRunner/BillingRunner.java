@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/java/AppFeature/Billing.feature"},
 		glue = {"stepdefinitions"},
-		plugin= {"pretty"
+		plugin= {"pretty",
 			"xml:target/MyReports/report.xml","json:target/MyReports/report.json"},
 		publish = true
 		)
