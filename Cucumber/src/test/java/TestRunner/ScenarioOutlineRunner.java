@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/java/AppFeature/ScenarioOutline.feature"},
 		glue = {"stepdefinitions"},
-		plugin = {"pretty"},
+		plugin= {"pretty",
+			"json:target/MyReports/report.json","xml:target/MyReports/report.xml"},
 		publish = true
 	)
 
