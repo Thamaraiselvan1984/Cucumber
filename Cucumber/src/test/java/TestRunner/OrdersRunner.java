@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/java/AppFeature/Orders.feature"},
 		glue = {"stepdefinitions","Hooks"},
 		tags = "@smoke",
-	    plugin= {"pretty"}
+	        plugin= {"pretty",
+			"xml:target/MyReports/report.xml","json:target/MyReports/report.json"},
 			)
 public class OrdersRunner {
 
