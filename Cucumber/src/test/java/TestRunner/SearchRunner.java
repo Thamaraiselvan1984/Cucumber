@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/java/AppFeature/Search.feature"},
 		glue = {"stepdefinitions"},
-		plugin= {"pretty"}
+		plugin= {"pretty",
+			"json:target/MyReports/report.json","xml:target/MyReports/report.xml"}
 	)
 
 public class SearchRunner 
